@@ -1,0 +1,22 @@
+#container{
+    width:100%;
+    background-color: black;
+    display: flex;
+    
+    
+}
+.box{
+    width: 34%;
+    padding: 5px;
+    color:white;
+}
+.box:hover{
+    background-color: white;
+    color:black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
