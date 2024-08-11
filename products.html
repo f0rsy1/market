@@ -1,19 +1,22 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css"/>
-        <script src="js/components.js"></script>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <script src="./js/components.js"></script>
     </head>
     <body>
-        <div id="container">
-            <div class="box">
-                Главная
-            </div>
-            <div class="box">
-                Товары
-            </div>
-            <div class="box">
-                Корзина
-            </div>
-        </div>
+        <header id="menu">
+             <a href="index.html">Описание</a> 
+             <a href="products.html">Товары</a> 
+        </header>
+        <main>
+            <div id="products"></div>
+        </main>
     </body>
+    <script>
+    
+    let products = document.querySelector("#products")
+    products.append(new ProductCard("Iphone 13 pro 256 gb", "https://avatars.mds.yandex.net/i?id=8cb204b126a5abbac5748f5e9f2d123aaa6e6a93-5161321-images-thumbs&n=13", "50000"));
+    products.append(new ProductCard("Iphone 13 pro 512 gb", "https://avatars.mds.yandex.net/i?id=8cb204b126a5abbac5748f5e9f2d123aaa6e6a93-5161321-images-thumbs&n=13", "70000"));
+
+    </script>
 </html>
